@@ -7,10 +7,8 @@ export const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  background: none;
+
 `;
 
 export const Hamburger = styled.div`
@@ -42,6 +40,7 @@ export const Menu = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
+
 
   @media (max-width: 800px) {
     overflow: hidden;
@@ -90,20 +89,4 @@ export const MenuButton = styled.button`
   margin: 10px;
 `;
 
-export const MenuLinks = styled.div`
 
-
-@media(min-width: 1200px) {
-    padding-right: 250px;
-}
-
-@media(min-width: 1300px) {
-    padding-right: 340px;
-}
-
-@media(min-width: 1400px) {
-    padding-right: 420px;
-}
-
-
-`;

@@ -6,3 +6,66 @@
 html, body {
   background-color: #191C2A;
 }
+
+
+.bg,.button {
+position:absolute;
+width: 50px;
+height: 50px;
+border-radius: 50px;
+}
+
+.bg {
+  animation: pulse 1.2s ease infinite;
+  background-color: rgba(0,0,0,0.23);
+  border: solid white 1px;
+}
+
+.button {
+ display:flex;
+ justify-content: center;
+ align-items: center;
+position: absolute;
+z-index: 99;
+border: none;
+background-size: 18px;
+cursor: pointer;
+outline: none;
+text-align: center;
+}
+
+.button a {
+  position: absolute;
+  color: #FFF;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3; 
+  }
+  100% {
+    transform: scale(1.5);
+
+    opacity: 0;
+  }
+}
+
+.button a {
+
+}
+i {
+  padding: 20px;
+}
+
+
+.svg-bg {
+  background-repeat: no-repeat;
+  height: 500px;
+
+}
