@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Nav, Hamburger,Logo, Menu, MenuLink} from './NavbarElements';
+import {Nav, Hamburger,Logo, Menu, MenuLink, MenuButton} from './NavbarElements';
 import GrayLogo from '../../Assets/Logos/gray-logo.png';
 function Navbar() {
 
@@ -23,6 +23,8 @@ const [isOpen, setIsOpen] = useState(false);
 <MenuLink href=''>About Us</MenuLink>
 <MenuLink href=''> Blog</MenuLink>
 <MenuLink href=''>Upcoming Events</MenuLink>
+<MenuButton>Login</MenuButton>
+<MenuButton>Join Our Server</MenuButton>
 </Menu>
 
 

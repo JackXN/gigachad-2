@@ -45,7 +45,7 @@ export const Menu = styled.div`
   @media (max-width: 750px) {
     overflow: hidden;
     flex-direction: column;
-    max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
+    max-height: ${({ isOpen }) => (isOpen ? "500px" : "0")};
     transition: max-height 0.3s ease-in;
     width: 100%;
   }
@@ -64,3 +64,18 @@ export const MenuLink = styled.a`
     color: white;
   }
 `;
+
+
+
+export const MenuButton = styled.button `
+border-radius: 15px;
+padding: 10px;
+padding-left: 15px;
+padding-right: 15px;
+background:transparent;
+border: 1px solid gray;
+color: white;
+margin: 10px;
+
+
+`
