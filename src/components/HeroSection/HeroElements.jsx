@@ -6,8 +6,15 @@ export const HeroContainer = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-flex-direction: column;
 padding: 20px;
+flex-direction: column;
+
+@media(min-width: 1400px) {
+    display:flex;
+    flex-direction: row;
+}
+
+
 `
 
 
@@ -15,6 +22,8 @@ export const LeftHero = styled.div`
 height: 100%;
 color: white;
 
+@media(max-width: 1440px;)
+display:flex;
 `
 
 export const HeroTitle = styled.div`
@@ -34,23 +43,39 @@ p {
     font-size: 1rem;
     font-family: ${theme.fonts.header};
     font-weight: medium;
+
 }
+
+@media(min-width:1400px) {
+
+}
+
 `
-export const RightHero = styled.img`
+export const RightHero = styled.div`
 height: 200px;
 width: 200px;
 padding: 50px;
+
+@media(min-width: 1400px) {
+    height: 500px;
+    width: 500px;
+    float:right;
+}
+`
+
+export const HeroLogo = styled.img`
+height: 400px;
+width: 400px;
+
+@media(min-width: 1400px) {
+    height: 500px;
+    width: 500px;
+}
 `
 
 export const LearnMoreButtonContainer = styled.div`
 display:flex;
-flex-direction: row;
-margin-top: 30px;
-
-p {
-    position: relative;
-    left: 76px;
-    top: 15px;
-    font-family: ${theme.fonts.header};
-}
+justify-content:flex-start;
+margin-top: 20px;
+align-items:center;
 `

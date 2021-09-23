@@ -1,6 +1,7 @@
 import React from 'react'
+import {AiOutlineArrowRight as Arrow} from 'react-icons/ai';
 import GoldLogo from '../../Assets/Logos/gold-logo.png'
-import {HeroContainer, LeftHero,HeroTitle, HeroDescription, RightHero, LearnMoreButtonContainer} from './HeroElements';
+import {HeroContainer, LeftHero,HeroTitle, HeroDescription, RightHero,HeroLogo, LearnMoreButtonContainer} from './HeroElements';
 import "../../App.css"
 
 function Hero() {
@@ -18,15 +19,15 @@ Of enthusiastic crypto traders like yourself. We offer you the ability to explor
 World where you can trade the crypto market effortlessly.</p>
     </HeroDescription>
     <LearnMoreButtonContainer>
-    <div className='bg'></div>
-    <div className='button'>
-<a><i className="lni lni-arrow-right-circle"></i></a>
+    <div class="blob">
+    <a href='#' alt='Arrow-Icon' className='Arrow'><Arrow/></a>
     </div>
-
     <p>Learn More</p>
     </LearnMoreButtonContainer>
 </LeftHero>
-<RightHero src={GoldLogo} alt='GoldChad'/>
+<RightHero> 
+   <HeroLogo src={GoldLogo} alt='GoldChad'/>
+</RightHero>
         </HeroContainer>
     )
 }
